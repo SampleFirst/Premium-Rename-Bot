@@ -1,6 +1,4 @@
 class Translation(object):
-    ABOUT_TXT = "<b>╭───────────⍟\n├🤖 ᴍʏ ɴᴀᴍᴇ : {}\n├📕 ʟɪʙʀᴀʀʏ : <a href=https://github.com/pyrogram>ᴘʏʀᴏɢʀᴀᴍ</a>\n├✏️ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>Pyᴛʜᴏɴ 3</a>\n├💾 ᴅᴀᴛᴀ ʙᴀꜱᴇ: <a href=https://cloud.mongodb.com>Mᴏɴɢᴏ DB</a>\n├📊 ʙᴜɪʟᴅ ᴠᴇʀꜱɪᴏɴ: <a href=https://github.com/> ᴘʀᴇᴍɪᴜᴍ ʀᴇɴᴀᴍᴇ ʙᴏᴛ V1.0.0</a></b>\n╰───────────────⍟"
-
     HELP_TXT = """🌌 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ Tʜᴜᴍʙɴɪʟᴇ</u></b>
   
 <b>•></b> /start Tʜᴇ Bᴏᴛ Aɴᴅ Sᴇɴᴅ Aɴy Pʜᴏᴛᴏ Tᴏ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟy Sᴇᴛ Tʜᴜᴍʙɴɪʟᴇ.
