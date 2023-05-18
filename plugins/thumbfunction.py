@@ -2,13 +2,13 @@ from pyrogram import Client, filters
 from helper.database import find, delthumb, addthumb
 
 @Client.on_message(filters.private & filters.command(['viewthumb']))
-async def viewthumb(client, message):
-    chat_id = message.chat.id
-    thumb = find(int(chat_id))[0]
-    if thumb:
-        await client.send_photo(chat_id, photo=thumb)
-    else:
-        await message.reply_text("**You don't have any custom thumbnail**")
+async def viewthumb(client,message):
+		print(message.chat.id)
+		thumb = find(int(message.chat.id))[0]
+		if thumb :
+			await client.send_photo(message.chat.id,photo =f"{thumb}")
+		else:
+			await message.reply_text("**You don't have any custom thumbnail**")
 
 @Client.on_message(filters.private & filters.command(['delthumb']))
 async def removethumb(client, message):
