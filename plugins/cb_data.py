@@ -6,7 +6,7 @@ from translation import Translation
 
 from PIL import Image
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply
+from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup, ForceReply)
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 
@@ -48,18 +48,6 @@ async def help(bot, update):
 async def bots(bot, update):
     await query.message.edit_text(
         text=Translation.BOT_TXT,
-        disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data="close"),
-            InlineKeyboardButton("◀️ ʙᴀᴄᴋ", callback_data="start")
-        ]])
-    )
-
-
-@Client.on_callback_query(filters.regex('about'))
-async def about(bot, update):
-    await query.message.edit_text(
-        text=Translation.ABOUT_TXT.format(client.mention),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data="close"),
