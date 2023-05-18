@@ -17,11 +17,11 @@ async def upgrade(bot, update):
     
     **🔱 Platinum Tier 🔱**
     Daily Upload limit: 50GB
-    Price: Rs 170 / 🌎 $2 per Month
+    Price: Rs 170 / 🌎 $2.00 per Month
     
     **💎 Diamond 💎**
     Daily Upload limit: 100GB
-    Price: Rs 200 / 🌎 $2.4 per Month
+    Price: Rs 200 / 🌎 $2.40 per Month
     
     Pay Using UPI ID 
     
@@ -51,11 +51,11 @@ async def upgradecm(bot, message):
     
     **🔱 Platinum Tier 🔱**
     Daily Upload limit: 50GB
-    Price: Rs 170 / 🌎 $2 per Month
+    Price: Rs 170 / 🌎 $2.00 per Month
     
     **💎 Diamond 💎**
     Daily Upload limit: 100GB
-    Price: Rs 200 / 🌎 $2.4 per Month
+    Price: Rs 200 / 🌎 $2.40 per Month
     
     Pay Using UPI ID 
     
