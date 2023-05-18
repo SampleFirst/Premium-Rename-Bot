@@ -9,8 +9,10 @@ mongo = pymongo.MongoClient(DB_URL)
 db = mongo[DB_NAME]
 dbcol = db["user"]
 
+# total users
 def total_user():
-    return dbcol.count_documents({})
+    user = dbcol.count_documents({})
+    return user
 
 def botdata(chat_id):
     bot_id = int(chat_id)
