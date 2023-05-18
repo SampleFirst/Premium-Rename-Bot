@@ -4,7 +4,7 @@ import os
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 import time
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup)
 import humanize
 from helper.progress import humanbytes
 from helper.database import insert, find_one, used_limit, usertype, uploadlimit, addpredata, total_rename, total_size
@@ -32,17 +32,17 @@ elif 12 <= currentTime.hour < 16:
 else:
     wish = 'Good evening'
 
-# Initialize the Telegram client
-app = Client("bot", bot_token=token)
+    
 
 # Start command handler
-@app.on_message(filters.private & filters.command(["start"]))
+@Client.on_message(filters.private & filters.command(["start"]))
 async def start(client, message):
     old = insert(int(message.chat.id))
     try:
         id = message.text.split(' ')[1]
-    except IndexError:
-        txt = f"Hello {wish} {message.from_user.first_name}\n\nI am file renamer bot. Please send any telegram document or video and enter a new filename to rename it."
+    except:
+        txt=f"""Hello {wish} {message.from_user.first_name } \n\n
+	I am file renamer bot, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
         await message.reply_photo(photo=LAZY_PIC, caption=txt, reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("🤖 ᴍᴏʀᴇ ʙᴏᴛs 🤖", callback_data='bots')],
             [InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
@@ -57,12 +57,12 @@ async def start(client, message):
             try:
                 await client.send_message(id, "Your friend is already using our bot")
                 await message.reply_photo(photo=LAZY_PIC, caption=txt, reply_markup=InlineKeyboardMarkup([
-                    [InlineKeyboardButton("🤖 ᴍᴏʀᴇ ʙᴏᴛs 🤖", callback_data='bots')],
-                    [InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
-                     InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')],
-                    [InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='about'),
-                     InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help')]
-                ]))
+            [InlineKeyboardButton("🤖 ᴍᴏʀᴇ ʙᴏᴛs 🤖", callback_data='bots')],
+            [InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
+             InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')],
+            [InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='about'),
+             InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help')]
+        ]))
             except:
                 return
         else:
