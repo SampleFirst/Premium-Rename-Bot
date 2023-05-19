@@ -2,11 +2,10 @@ import os
 import random
 import time
 from datetime import timedelta
-from translation import Translation
 
 from PIL import Image
 from pyrogram import Client, filters
-from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup, ForceReply, CallbackQuery)
+from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup, ForceReply)
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 
@@ -24,61 +23,6 @@ ADMIN = os.environ.get("ADMIN", "")
 app = Client("test", api_id=API_ID, api_hash=API_HASH, session_string=STRING)
 
 
-@Client.on_callback_query()
-async def cb_handler(client: Client , query: CallbackQuery):
-    data = query.data
-    user_id = query.from_user.id
-    
-    if data == "start":
-        await query.message.edit_text(
-            txt = f"Hello {wish} {message.from_user.first_name}\n\nI am file renamer bot. Please send any telegram document or video and enter a new filename to rename it.".
-            format(query.from_user.mention),
-            disable_web_page_preview=True,
-            reply_markup = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🤖 ᴍᴏʀᴇ ʙᴏᴛs 🤖", callback_data='bots')
-        ],[
-        InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
-        InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')
-        ],[
-        InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='about'),
-        InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help')
-            ]])
-        )
-    elif data == "help":
-        await query.message.edit_text(
-            text=Translation.HELP_TXT,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data = "close"),
-                InlineKeyboardButton("◀️ ʙᴀᴄᴋ", callback_data = "start")
-            ]])          
-        )
-    elif data == "abouts":
-        await query.message.edit_text(
-            text=Translation.ABOUT_TXT.format(client.mention),
-            disable_web_page_preview = True,
-            reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data = "close"),
-                InlineKeyboardButton("◀️ ʙᴀᴄᴋ", callback_data = "start")
-            ]])          
-        )
-    elif data == "bots":
-        await query.message.edit_text(
-            text=Translation.BOT_TXT,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data = "close"),
-                InlineKeyboardButton("◀️ ʙᴀᴄᴋ", callback_data = "start")
-            ]])          
-        )
-    elif data == "close":
-        try:
-            await query.message.delete()
-            await query.message.reply_to_message.delete()
-            await query.message.continue_propagation()
-        except:
-            await query.message.delete()
-            await query.message.continue_propagation()
             
 
 @Client.on_callback_query(filters.regex('cancel'))
