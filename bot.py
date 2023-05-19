@@ -7,7 +7,7 @@ from plugins.cb_data import app as Client2
 TOKEN = os.environ.get("TOKEN", "5873664112:AAEMhsbdC4TCLp_efpJXw9eWeqg1dmREdaM")
 API_ID = int(os.environ.get("API_ID", "23906038"))
 API_HASH = os.environ.get("API_HASH", "dff1eb42fad7971f16da662a99c0f376")
-STRING = os.environ.get("STRING", "BQFsxvYASF2KNfHPjeWo0LQfgFYomldGggEHiFN5rvkgigZEoOrbR29b_WHnIzYgC2B7fnsRl14BmLlppOmVAToXa4gRth5RjPxK9cbGFWNGF31UQxc5WkTlOUW2fucV7-RIh5frKvP2rGQOQWHKvD5q_eyqNcslUU3HPwPcMu8ye5rDUilqjqx6V6CsbqQ_T7cv4mnVB8gWOMZ819_Nz7DS_aNVc3oJ3slLwCHLlqQu756HCY7tTzQESH4EXbGmpDj5tn4HXvyW62PbKnMKzbe27jzGUWUcrg4fzhtKAH0jaL9xeBwGlzYYckzfEYxmRqNGLljC4M2f-mW-1_ERnckrYNlZTQAAAAE2-ZleAA")
+STRING = os.environ.get("STRING", "BQFsxvYAHVTc1i9p2Ho-RUhkmImuffvebIp5mapamUPnaN7g_Gs2dcveQ9Wbn2nj8kmc2G9Tp6aIYPsr33PG-Wl-XaeCqgdofZCibuoHfFT5afkZ8AkG7Vm5fukWYdJZi-vtr40E95nFwGLqw46zB2oZ1pwC78-j-b1YZT46qfkRliY0Mhp6PysJhz2BzF0wzBEhYQ3kb3COndNRgdbDooZKDBekFaOPRf-VdNXDGkyUzzZKM029x2YNLDGaWYlzsI_sabZRsETmjxu-604mCnl05SgI1nb9Kynl9GbjRtGxxoXTKWqiuy45NUzEd2-tNt3Ht-rT6EaPsDRXgpkaB4ApBv4A9wAAAAE2-ZleAA")
 
 
 def update_session_string(session_string):
