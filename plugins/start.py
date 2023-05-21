@@ -14,7 +14,7 @@ from helper.database import daily as daily_
 from helper.date import check_expi
 
 CHANNEL = os.environ.get('CHANNEL', "")
-STRING = os.environ.get("STRING", "BQFsxvYAHVTc1i9p2Ho-RUhkmImuffvebIp5mapamUPnaN7g_Gs2dcveQ9Wbn2nj8kmc2G9Tp6aIYPsr33PG-Wl-XaeCqgdofZCibuoHfFT5afkZ8AkG7Vm5fukWYdJZi-vtr40E95nFwGLqw46zB2oZ1pwC78-j-b1YZT46qfkRliY0Mhp6PysJhz2BzF0wzBEhYQ3kb3COndNRgdbDooZKDBekFaOPRf-VdNXDGkyUzzZKM029x2YNLDGaWYlzsI_sabZRsETmjxu-604mCnl05SgI1nb9Kynl9GbjRtGxxoXTKWqiuy45NUzEd2-tNt3Ht-rT6EaPsDRXgpkaB4ApBv4A9wAAAAE2-ZleAA")
+STRING = os.environ.get("STRING", "")
 ADMIN = int(os.environ.get("ADMIN", "5217294686"))
 bot_username = os.environ.get("BOT_USERNAME", "")
 log_channel = int(os.environ.get("LOG_CHANNEL", ""))
@@ -28,7 +28,7 @@ currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
     wish = "Good morning"
-elif 12 <= currentTime.hour < 12:
+elif 12 <= currentTime.hour < 16:
     wish = 'Good afternoon'
 else:
     wish = 'Good evening'
