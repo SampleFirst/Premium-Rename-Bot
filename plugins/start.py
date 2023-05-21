@@ -89,7 +89,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
     
     if data == "start":
         await query.message.edit_text(
-            txt = f"Hello :{message.from_user.first_name}\n\nI am file renamer bot. Please send any telegram **document or video** and enter a new filename to rename it.".
+            txt = f"""Hello :{message.from_user.first_name}\n\nI am file renamer bot. Please send any telegram **document or video** and enter a new filename to rename it.""".
             format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup([[
