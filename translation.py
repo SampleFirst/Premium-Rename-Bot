@@ -1,5 +1,5 @@
 class Translation(object):
-    ABOUT_TXT = "<b>╭───────────⍟\n├🤖 ᴍʏ ɴᴀᴍᴇ : {}\n├📕 ʟɪʙʀᴀʀʏ : <a href=https://github.com/pyrogram>ᴘʏʀᴏɢʀᴀᴍ</a>\n├✏️ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>Pyᴛʜᴏɴ 3</a>\n├💾 ᴅᴀᴛᴀ ʙᴀꜱᴇ: <a href=https://cloud.mongodb.com>Mᴏɴɢᴏ DB</a>\n├📊 ʙᴜɪʟᴅ ᴠᴇʀꜱɪᴏɴ: <a href=https://github.com/> ᴘʀᴇᴍɪᴜᴍ ʀᴇɴᴀᴍᴇ ʙᴏᴛ V1.0.0</a></b>\n╰───────────────⍟"
+    ABOUT_TXT = "<b>╭───────────⍟\n├🤖 ᴍʏ ɴᴀᴍᴇ :@PremiumRenameBot \n├📕 ʟɪʙʀᴀʀʏ : <a href=https://github.com/pyrogram>ᴘʏʀᴏɢʀᴀᴍ</a>\n├✏️ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>Pyᴛʜᴏɴ 3</a>\n├💾 ᴅᴀᴛᴀ ʙᴀꜱᴇ: <a href=https://cloud.mongodb.com>Mᴏɴɢᴏ DB</a>\n├📊 ʙᴜɪʟᴅ ᴠᴇʀꜱɪᴏɴ: <a href=https://github.com/> ᴘʀᴇᴍɪᴜᴍ ʀᴇɴᴀᴍᴇ ʙᴏᴛ V1.0.0</a></b>\n╰───────────────⍟"
     
     HELP_TXT = """🌌 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ Tʜᴜᴍʙɴɪʟᴇ</u></b>
   
@@ -13,8 +13,8 @@ class Translation(object):
 <b>•></b> /see_caption - Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Vɪᴇᴡ Yᴏᴜʀ Cᴜꜱᴛᴏᴍ Cᴀᴩᴛɪᴏɴ
 <b>•></b> /del_caption - Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Dᴇʟᴇᴛᴇ Yᴏᴜʀ Cᴜꜱᴛᴏᴍ Cᴀᴩᴛɪᴏɴ
 Exᴀᴍᴘʟᴇ:- /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}\n💾 Sɪᴢᴇ: {filesize}\n⏰ Dᴜʀᴀᴛɪᴏɴ: {duration}
-<b>•></b> /myplan` - To view users current plan.
-<b>•></b> /upgrade` - To view all plans with price list of SILVER - GOLD - PLATINUM - DIAMOND.
+<b>•></b> /myplan - To view users current plan.
+<b>•></b> /upgrade - To view all plans with price list of SILVER - GOLD - PLATINUM - DIAMOND.
 
 ✏️ <b><u>Hᴏᴡ Tᴏ Rᴇɴᴀᴍᴇ A Fɪʟᴇ</u></b>
 <b>•></b> Sᴇɴᴅ Aɴy Fɪʟᴇ Aɴᴅ Tyᴩᴇ Nᴇᴡ Fɪʟᴇ Nɴᴀᴍᴇ \nAɴᴅ Aᴇʟᴇᴄᴛ Tʜᴇ Fᴏʀᴍᴀᴛ [ document, video, audio ]"""
