@@ -42,12 +42,12 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f"""Hello {wish} {message.from_user.first_name }\n\nI am file renamer bot, Please sent any telegram **Document Or Video** and enter new filename to rename it"""
+        txt=f"""Hello :{message.from_user.first_name }\n\nI am file renamer bot, Please sent any telegram **Document Or Video** and enter new filename to rename it"""
         await message.reply_photo(photo=LAZY_PIC, caption=txt, reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("🤖 ᴍᴏʀᴇ ʙᴏᴛs 🤖", callback_data='bots')],
             [InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
              InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')],
-            [InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='about'),
+            [InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='abouts'),
              InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help')]
         ]))
         return
@@ -60,7 +60,7 @@ async def start(client, message):
             [InlineKeyboardButton("🤖 ᴍᴏʀᴇ ʙᴏᴛs 🤖", callback_data='bots')],
             [InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
              InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')],
-            [InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='about'),
+            [InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='abouts'),
              InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help')]
         ]))
             except:
@@ -72,13 +72,13 @@ async def start(client, message):
             new_limit = limit + 104857600
             uploadlimit(int(id), new_limit)
             await message.reply_text(text=f"""
-            Hello {wish} {message.from_user.first_name}\n\n
+            Hello :{message.from_user.first_name}\n\n
             I am file renamer bot. Please send any telegram document or video and enter a new filename to rename it.
             """, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("🤖 ᴍᴏʀᴇ ʙᴏᴛs 🤖", callback_data='bots')],
                 [InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
                  InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')],
-                [InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='about'),
+                [InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='abouts'),
                  InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help')]
             ]))
 
@@ -89,7 +89,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
     
     if data == "start":
         await query.message.edit_text(
-            txt = f"Hello {wish} {message.from_user.first_name}\n\nI am file renamer bot. Please send any telegram document or video and enter a new filename to rename it.".
+            txt = f"Hello :{message.from_user.first_name}\n\nI am file renamer bot. Please send any telegram **document or video** and enter a new filename to rename it.".
             format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup([[
@@ -98,7 +98,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
         InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
         InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')
         ],[
-        InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='about'),
+        InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='abouts'),
         InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help')
             ]])
         )
@@ -181,7 +181,7 @@ async def send_doc(client, message):
                 [InlineKeyboardButton("🤖 ᴍᴏʀᴇ ʙᴏᴛs 🤖", callback_data='bots')],
                 [InlineKeyboardButton('🔔 ᴜᴘᴅᴀᴛᴇ', url='https://t.me/iPepkornBots'),
                 InlineKeyboardButton('💁‍♂️ sᴜᴘᴘᴏʀᴛ', url='https://t.me/iPapkornSupportGroup')],
-                [InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='about'),
+                [InlineKeyboardButton('🎛️ ᴀʙᴏᴜᴛ', callback_data='abouts'),
                 InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help')]
             ])
         )
