@@ -113,7 +113,7 @@ async def cb_handler(client: Client , query: CallbackQuery):
         )
     elif data == "abouts":
         await query.message.edit_text(
-            text=Translation.ABOUT_TXT.format(client.mention),
+            text=Translation.ABOUT_TXT,
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data = "close"),
