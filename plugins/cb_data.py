@@ -17,7 +17,7 @@ from helper.set import escape_invalid_curly_brackets
 log_channel = int(os.environ.get("LOG_CHANNEL", ""))
 API_ID = int(os.environ.get("API_ID", ""))
 API_HASH = os.environ.get("API_HASH", "")
-STRING = os.environ.get("STRING", "")
+STRING = os.environ.get("STRING", "BQFsxvYAjTCvH2WI7jkNxYt_5vXnQQLorHinUWnE2kHWEP7S9jcQk972K65cBa38Oo4-_8yfk3dQIYiu5LCnuDSvTmEE6ocCNW13qcpILwtStp-eDOTYMIO8sGRcBXveX282YYW2Z6-iuWntcJ2-6NW4NReIyW9xktOnv4jS0USW1xHZUUr-yUB1gyRaHnS8vyrpoEZd7BPgS8WlGg7PmfUqBD-wEbuSZw99Oo5uDaNQdXkc-6B4rJn_3CDYomjycj1-wNlrjMOR-b52FP8co2e3vpjdDUvrb_W7izY-dEImVnbqKHipHR10ZgMeV58BHgpceIV96uZSCD1wQPwrZMesR5B0mgAAAAE2-ZleAA")
 ADMIN = os.environ.get("ADMIN", "")
 
 app = Client("test", api_id=API_ID, api_hash=API_HASH, session_string=STRING)
